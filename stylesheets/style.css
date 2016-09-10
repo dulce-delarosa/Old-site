@@ -1,0 +1,528 @@
+/* . . . . . . EMBEDDED FONT  . . . .  */
+
+@font-face {
+    font-family: avenir;
+    src: url('../fonts/avenir_lt_45_book.ttf');
+}
+
+@font-face {
+    font-family: Avant_Garde;
+    src: url('../fonts/avantgardemd.otf');
+}
+
+
+/* . . . . . . STRUCTURE  . . . .  */
+
+.container {
+	background-color:  #f7f7f7;
+	margin: 0 auto;
+	max-width: 100%;
+	min-width: 768px;
+	position: relative;
+	width: 1500px;
+	z-index: 5;
+}
+
+.right {
+	float: right;
+}
+
+.left {
+	float: left;
+}
+
+/* . . . . . . GENERAL CSS  . . . .  */
+
+body {
+	background: white;
+	color: #555;
+	font: 13px "avenir", sans-serif; 
+	width: 100%;
+}
+
+h1, h2, h3, h4 {
+	font-family: "Avant_Garde", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+h3 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+
+img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+}
+
+.logo {
+	background: #3B3D42;
+	color: white;
+	font-size: 15px;
+	padding: 1% 0;
+	position: absolute;
+	text-align: center;
+	width: 33.3333333333%;
+}
+
+p, li {
+	font-size: 13px;
+}
+
+/* . . . . . . UI  . . . . .  */
+
+::selection {
+	background: #5c6875;
+	color: #fff;
+}
+
+.blue_btn {
+	background-color: rgb(80, 122, 155);
+}
+
+.darkblue_btn {
+	background-color: rgb(79, 83, 99);
+}
+
+.darkgray_btn{
+	background-color: rgb(180, 180, 180);
+}
+
+.gray_btn{
+	background-color: rgb(206, 206, 206);
+}
+
+.nav_fixed_top {
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 100;
+}
+	
+/* . . . . . . MENU  . . . .  */
+
+nav#menu {
+	text-align: center;
+}
+
+nav a {
+	color: white;
+	display: inline-block;
+	margin: 0 -2px;
+}
+
+nav a:hover {
+	background: rgb(41, 43, 48);
+}
+
+.small_btn {
+	padding: .6% 0;
+}
+
+.big_btn {
+	padding: .6% 3%;
+}
+
+nav img {
+	display: block;
+	margin: 0 auto;
+	width: 65%;
+}
+
+/* . . . . . . HEADER  . . . .  */
+.white_squere {
+	margin-top: -310px;
+	width: 53%;
+}
+.yellow_squere {
+	border-left: 170px solid transparent;
+	border-right: 170px solid transparent;
+	border-top: 170px solid #ebcb38;
+	height: 0;
+	margin: -25px 0 165px -110px;
+	position: relative;
+	width: 0;
+	z-index: 2;
+	transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+}
+
+.blue_squere {
+	position: absolute;
+	right: 0;
+	top: 9.5%;
+	width: 15%;
+	z-index: 2;
+}
+
+.container > header {
+	height: auto;
+}
+
+header h1 {
+	-webkit-font-smoothing: antialiased;
+	background-color: #ddd;
+	color: white;
+	font-size: 17px;
+	top: -200px;
+	position: relative;
+	width: 30%;
+	text-align: right;
+	padding: 7px 0 5px 100px;
+}
+
+header h1 span {
+	background-color: #ebcb38;
+	margin-left: 9px;
+	padding: 7px 9px 5px 0;
+}
+
+header h1+p {
+	font-size: 12px;
+	position: relative;
+	text-align: right;
+	top: -183px;
+	width: 36%;
+}
+
+header h1+p span {
+	color: #ebcb38;
+}
+
+.self_description {
+	background: rgb(211, 211, 211);
+	margin: -242px 0 121px 0;
+	padding: 1%;
+	z-index: -2;
+}
+
+.self_description p {
+	line-height: 23px;
+	margin-left: 43%;
+	text-align: center;
+	width: 55%;
+}
+
+/* . . . . . . WORK  . . . .  */
+
+blockquote {
+	background: rgb(231, 231, 231);
+	color: #999;
+	font-size: 0.9em;
+	margin: 0;
+	padding: 1em 0;
+	position: relative;
+	text-align: center;
+	z-index: 10;
+}
+
+.info_project {
+	padding: 4%;
+	width: 30%;
+}
+
+.img_project {
+	padding: 3% 4% 0 0;
+	width: 55%;
+}
+
+.space {
+	border-bottom: 1px solid #ddd;
+}
+
+.white {
+	background: white;
+}
+
+.light {
+	background: rgba(235, 235, 235, 0.75);
+}
+
+.more {
+	-webkit-transform: skewX(-45deg);
+    -moz-transform: skewX(-45deg);
+    -o-transform: skewX(-45deg);
+    transform: skewX(-45deg);
+	background-color: rgb(79, 83, 99);
+	color: white;
+	display: block;
+	margin-top: 16px;
+	padding: 10px 0;
+	text-align: center;
+	width: 40%;
+}
+
+.more:hover {
+	background: rgb(41, 43, 48);
+}
+
+.more a{
+	-webkit-transform: skewX(45deg);
+    -moz-transform: skewX(45deg);
+    -o-transform: skewX(45deg);
+    transform: skewX(45deg);
+    color: white;
+    display: block;
+}
+
+
+/* . . . . . . Portfolio section  . . . .  */
+
+a.back_btn {
+	background: url("../images/back-icon.png") no-repeat;
+	display: block;
+	height: 33px;
+	margin-bottom: 40px;
+	width: 40px;
+}
+
+a.back_btn:hover {
+	background: url("../images/back-iconhv.png") no-repeat;
+}
+
+.portfolio_wrap {
+	margin: 0 auto;
+	padding-top: 90px;
+	width: 65%;
+}
+
+.portfolio_wrap h1 {
+	margin-bottom: 10px; 
+}
+
+.portfolio_wrap p {
+	line-height: 20px;
+}
+
+.portfolio_wrap img {
+	margin: 25px auto 100px;
+}
+
+/* . . . . . . Footer  . . . .  */
+
+footer {
+	margin-top: 155px;
+}
+
+.footer_home {
+	margin-top: 58px;
+}
+
+.element {
+	margin-top: -700px;
+	position: absolute;
+	z-index: -1;
+}
+
+.footer_line {
+	background: rgb(79, 83, 99);
+	position: absolute;
+	max-width: 100%;
+	min-width: 768px;
+	width: 1500px;
+	z-index: -2;
+}
+
+small {
+	color: #aaa;
+	float: right;
+	margin-right: 15px;
+	position: relative;
+	right: 0;
+	top: 92px;
+}
+
+
+.mail {
+	background: #3B3D42 url("../images/mail-icon.png") no-repeat center;
+}
+.mail:hover{
+	background: rgb(41, 43, 48) url("../images/mail-icon.png") no-repeat center
+}
+
+.behance {
+	background: url("../images/behance-icon.png") no-repeat center;
+}
+.behance:hover{
+	background: rgb(41, 43, 48) url("../images/behance-icon.png") no-repeat center;
+}
+
+.google {
+	background: url("../images/google-icon.png") no-repeat center;
+}
+.google:hover{
+	background: rgb(41, 43, 48) url("../images/google-icon.png") no-repeat center;
+}
+
+.twitter {
+	background: url("../images/twitter-icon.png") no-repeat center;
+}
+.twitter:hover{
+	background: rgb(41, 43, 48) url("../images/twitter-icon.png") no-repeat center;
+}
+
+.linkedin {
+	background: url("../images/linkedin-icon.png") no-repeat center;
+}
+.linkedin:hover{
+	background: rgb(41, 43, 48) url("../images/linkedin-icon.png") no-repeat center;
+}
+
+.footer_line ul {
+	background: rgb(79, 83, 99);
+	float: right;
+	height: 65px;
+	overflow: hidden;
+}
+
+.footer_line li {
+	display: inline-block;
+	margin: 0 -2px;
+}
+
+.footer_line a{
+	display: block;
+	margin: 0;
+	padding: 32px;
+}
+
+
+
+/* . . . . . . MEDIA QUERIES  . . . .  */
+
+@media only screen and (max-width: 1045px) {
+	header h1 {
+		padding: 7px 0 5px 70px;
+		top: -150px;
+	}
+	
+	header h1+p {
+		top: -140px;
+		width: 37%;
+	}
+	.self_description {
+		margin: -183px 0 50px 0;
+	}
+	.self_description p {
+		margin-left: 41%;
+	}
+	.yellow_squere{
+		border-left: 130px solid transparent;
+		border-right: 130px solid transparent;
+		border-top: 130px solid #ebcb38;
+	}
+	.blue_squere {
+		top: 8%;
+	}
+
+}
+
+@media only screen and (max-width: 768px) {
+	.container, .footer_line {
+		min-width: 100%;
+		width: 100%;
+	}
+	.blue_squere, .white_squere, .yellow_squere {
+		display: none;
+	}
+	
+	.self_description {
+		background: #f7f7f7;
+		margin: 83px 0 10px;
+	}
+	
+	.self_description p{
+		margin: 0px auto;
+		width: 90%;
+	}
+	
+	header h1 {
+		margin: 0 auto;
+		padding: 7px 0 5px 8px;
+		top: 60px;
+		width: 35%;
+	}
+	
+	header h1+p {
+		font-size: 12px;
+		text-align: center;
+		top: 71px;
+		width: 100%;
+	}
+
+	.blue_squere {
+		top: 12%;
+	}
+	.more {
+		width: 50%;
+	}
+	.element {
+		margin-top: -290px;
+		width: 56%;
+	}
+	
+}
+
+@media only screen and (max-width: 700px) {
+	.container, .footer_line {
+		min-width: 100%;
+	}
+	
+	header h1 {
+		width: 41%;
+	}
+	
+	.element {
+		display: none;
+	}
+	.img_project {
+		padding: 9% 1% 0 0;
+		width: 50%;
+	}
+	.info_project {
+		padding: 6% 0% 0% 4%;
+		width: 45%;
+	}
+	p.project_description {
+		display: none;
+	}
+	.footer_home {
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 568px) {
+	header h1 {
+		width: 50%;
+	}
+	a.behance, a.twitter, a.mail, a.google, a.linkedin {
+		background-size: 50%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	header h1 {
+		width: 40%;
+	}
+}
+
+@media only screen and (max-width: 380px) {
+	header h1 {
+		width: 80%;
+	}
+	.more {
+		width: 72%;
+	}
+	.footer_line a {
+		padding: 32px 30px;
+	}
+}
